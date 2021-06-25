@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/css/bootstrap.min.css">
+    <title>Weather Dashboard</title>
+</head>
+<body>
+    <div class="jumbotron container-fluid mt-2 text-center p-2" style="background-color:black ;color: white;">
+        <h1> <strong>Weather Dashboard</strong></h1>
+    </div>
+    <div class="row">
+        <div class="col-sm-2 bg-light ml-5">
+            <h4 class="pt-1"><strong>Search for a City:</strong></h4>
+            <div class="input-group mb-3">
+                <input type="text" class="form-control"id="searchedCity" aria-label="City Search" aria-describedby="search-button">
+                <div class="input-group-append">
+                    <button class=" btn text-light" id="searchBtn" style="background-color:green ;color: white;">Search</button>
+                </div>
+            </div>
+            <ul class="city-list">
+
+            </ul>
+        </div>   
+        <div class="col-sm-6">
+            <div class="row ml-2 border border-dark ">
+                <div class="col-sm-12" id="todays-weather">
+                    <h3 id='today'></h3>
+                    <h3 class="city-name mb-1 mt-2 bolder" id="city"></h3>
+                    <p>Temperature:<span class="today" id="temperature"></span></p>
+                    <p>Humidity:<span class="today" id="humidity"></span></p> 
+                    <p>Wind Speed:<span class="today" id="wind-speed"></span></p> 
+                </div>
+            </div>
+            <div class="col-sm-12" id ="5dayForecast">
+                <h3>5-Day Forecast:</h3>
+                <div class="row text-light">
+                    <div class="col-sm-2 forecast ml-2 mb-3 p-2 mt-2 " style="background-color:green ;color: white;" >
+                        <p id="day1Date"></p>
+                        <p id="day1Img"></p>
+                        <p>Temperature:<span id="day1T"></span></p>
+                        <p>Wind Speed:<span id="day1W"></span></p>
+                        <p>Humidity:<span id="day1H"></span></p>
+                    </div>
+                    <div class="col-sm-2 forecast  ml-2 mb-3 p-2 mt-2 " style="background-color:green ;color: white;" >
+                        <p id="day2Date"></p>
+                        <p id="day2Img"></p>
+                        <p>Temperature:<span id="day2T"></span></p>
+                        <p>Wind Speed:<span id="day2W"></span></p>
+                        <p>Humidity:<span id="day2H"></span></p>
+                    </div>
+                    <div class="col-sm-2  forecast  ml-2 mb-3 p-2 mt-2 " style="background-color:green ;color: white;">
+                        <p id="day3Date"></p>
+                        <p id="day3Img"></p>
+                        <p>Temperature:<span id="day3T"></span></p>
+                        <p>Wind Speed:<span id="day3W"></span></p>
+                        <p>Humidity:<span id="day3H"></span></p>
+                    </div>
+                    <div class="col-sm-2  forecast  ml-2 mb-3 p-2 mt-2 " style="background-color:green ;color: white;">
+                        <p id="day4Date"></p>
+                        <p id="day4Img"></p>
+                        <p>Temperature:<span id="day4T"></span></p>
+                        <p>Wind Speed:<span id="day4W"></span></p>
+                        <p>Humidity:<span id="day4H"></span></p>
+                    </div>
+                    <div class="col-sm-2  forecast  ml-2 mb-3 p-2 mt-2 " style="background-color:green ;color: white;">
+                        <p id="day5Date"></p>
+                        <p id="day5Img"></p>
+                        <p>Temperature:<span id="day5T"></span></p>
+                        <p>Wind Speed:<span id="day5W"></span></p>
+                        <p>Humidity:<span id="day5H"></span></p>
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
