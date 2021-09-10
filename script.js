@@ -34,8 +34,8 @@ let day4Humidity = document.getElementById('day4H');
 let day5Humidity = document.getElementById('day5H');
 
 let day1Img = document.getElementById('day1Img');
-
-
+const listOfcities = []
+localStorage.setItem('cities', listOfcities);
 
 
 const apiKey = "e85bf845a5b6e3a8c317ab669bc8f0f9";
